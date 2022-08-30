@@ -1,0 +1,35 @@
+name: Nifty
+version: '${project.version}'
+main: me.alpha.nifty.Nifty
+api-version: 1.18
+authors: [ Alpha ]
+description: Nifty is a plugin that adds more customization and commands in your server!!!
+
+commands:
+  nifty:
+    description: Main command of Nifty
+    permission: nifty.command.main
+    usage: "Usage: /nifty <help : reload : version>"
+  broadcast:
+    description: A command that broadcast the given message
+    permission: nifty.command.broadcast
+    usage: "Usage: /broadcast <message>"
+  lockdown:
+    description: A command that lockdowns the entire server
+    permission: nifty.command.lockdown
+    usage: "Usage: /lockdown"
+  inventorypeek:
+    description: A command that let's you peek other player's inventory
+    permission: nifty.command.inventorypeek
+    usage: "Usage: /invpeek <player>"
+    aliases: [invpeek]
+
+permissions:
+  nifty.command.main:
+    description: Permission node for the main command
+  nifty.command.broadcast:
+    description: Permission node for the broadcast command
+  nifty.command.lockdown:
+    description: Permission node for the lockdown command
+  nifty.command.inventorypeek:
+    description: Permission node for the inventory peek command

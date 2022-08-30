@@ -1,0 +1,33 @@
+command-messages:
+  broadcast: "<dark_blue>[<gold><bold>Broadcast</bold></gold>]:<white> <message>"
+  lockdown: "<red>The server is currently in a <bold>LOCKDOWN</bold>. Please join later."
+  regen: "<green>Regenerated <player> with <bold><health></bold> hearts!!!"
+
+server:
+  motd:
+    enabled: true
+    random: true
+    messages:
+      - "<green><underlined>This is the first MOTD!!!"
+      - "<red><bold>Nifty supports random messages!!!"
+      - "<rainbow> and yeah... RAINBOW COLORS ARE SUPPORTED!!!"
+
+  player-join:
+    enabled: true
+    notice-first-join: true
+    first-join-message: "<green><bold><player></bold> has joined the server for the first time!!!"
+    main-join-message: "<green><bold><player></bold> has joined the server!!!"
+
+  player-quit:
+    enabled: true
+    quit-message: "<green><bold><player></bold> has left the server!!! Bye!!!"
+
+world:
+  block-restriction:
+    enabled: true
+    clear-item-on-main-hand: true
+    restriction-message: "<red><bold>You can't place that!!!"
+    restricted-blocks:
+      - "COMMAND_BLOCK"
+      - "REPEATING_COMMAND_BLOCK"
+      - "CHAIN_COMMAND_BLOCK"
